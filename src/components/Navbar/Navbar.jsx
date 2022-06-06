@@ -14,7 +14,7 @@ const Navbar = () => {
         {" "}
         Logo
       </Link>
-      <span data-cy="navbar-cart-items-count">{cartdata.length}</span>
+      <span data-cy="navbar-cart-items-count">{}</span>
       <button
         data-cy="navbar-login-logout-button"
         onClick={() => {
