@@ -48,44 +48,19 @@
   ],
   "cartItems": [
     {
+      "productId": 6,
+      "count": 1,
+      "id": 2
+    },
+    {
       "productId": 7,
       "count": 1,
-      "id": 11
+      "id": 3
     },
     {
-      "productId": 5,
+      "productId": 1,
       "count": 1,
-      "id": 15
-    },
-    {
-      "productId": 6,
-      "count": 1,
-      "id": 16
-    },
-    {
-      "productId": 6,
-      "count": 1,
-      "id": 17
-    },
-    {
-      "productId": 6,
-      "count": 1,
-      "id": 18
-    },
-    {
-      "productId": 2,
-      "count": 1,
-      "id": 19
-    },
-    {
-      "productId": 2,
-      "count": 1,
-      "id": 20
-    },
-    {
-      "productId": 2,
-      "count": 1,
-      "id": 21
+      "id": 4
     }
   ]
 }

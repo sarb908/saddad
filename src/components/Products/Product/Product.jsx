@@ -10,19 +10,22 @@ const Product = (props) => {
   const [added, setadded] = useState(false);
 
   // const [count, setCount] = useState(cartItem.count || "");
+
   const product = { id: props.id };
 
   useEffect(() => {
+    const item = cartdata.find((item) => item.productId === props.id);
+
     console.log("use", cartdata);
-    cartdata.map((item) => {
-      if (item.productId === props.id) {
-        console.log("fj");
-        setadded(true);
-        setCartItem(item);
-      }
-      return;
-    });
-  }, []);
+    if (item) {
+      setadded(true);
+      setCartItem(item);
+    } else {
+      setadded(false);
+      setCartItem([]);
+    }
+  }, [cartdata]);
+
   console.log(added);
   console.log(cartdata, props.id);
 

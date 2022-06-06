@@ -7,11 +7,11 @@ import { CartContext } from "../../context/CartContext";
 const Navbar = () => {
   const { isAuth, logoutHandler } = useContext(AuthContext);
   const { cartdata } = useContext(CartContext);
-
+  console.log(cartdata);
   return (
     <div data-cy="navbar">
       <Link data-cy="navbar-home-link" to="/">
-        {" "}
+        {cartdata.length}
         Logo
       </Link>
       <span data-cy="navbar-cart-items-count">{}</span>
